@@ -1,7 +1,24 @@
-/* This is an example of using Sass, otherwise plain CSS works too*/
-/* $primary-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-; */
-
 body {
-  background-color: blueviolet;
+  display: grid;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    "sideNav board"
+    "sideNav players"
+    ". .";
+}
+
+.sideNav { grid-area: sideNav; 
+  background-color: blue;
+}
+
+.board { grid-area: board; 
+  background-color: aquamarine;
+  
+}
+
+.players { grid-area: players; 
+  background-color: brown
 }
